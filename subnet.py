@@ -22,5 +22,4 @@ print('network address is ')
 for i in range(4):
     k = (ip[i])
     m = (mask1[i])
-    print m and k,
-    ptint('helllo')
+    print (m and k,end='.')

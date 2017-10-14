@@ -8,13 +8,13 @@ def Main():
 
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind((host, port))
-
-    message = raw_input("-> ")
+    message=''
     while message != 'q':
+        message = raw_input("enter the data you want to send or q to quit-> ")
         s.sendto(message, server)
         data, addr = s.recvfrom(1024)
-        print 'Received from server: ' + str(data)
-        message = raw_input("-> ")
+        print 'Received from server: '+str(addr) + str(data)
+        
     s.close()
 
 if __name__ == '__main__':

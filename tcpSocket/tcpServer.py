@@ -6,6 +6,7 @@ def Main():
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.bind((host,port))
+    print "serveer started :"
 
     s.listen(1)
     c, addr = s.accept()
@@ -15,7 +16,7 @@ def Main():
         if not data:
             break
         print "from connected user: " + str(data)
-        data = str(data).upper()
+        data = raw_input("enter the data you want to send ->")
         print "sending: " + str(data)
         c.send(data)
     c.close()

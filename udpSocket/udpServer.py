@@ -13,7 +13,8 @@ def Main():
         data, addr = s.recvfrom(1024)
         print "message From: " + str(addr)
         print "from connected user: " + str(data)
-        data = str(data).upper()
+        print "enter the data you want to send"
+        data = raw_input()
         print "sending: " + str(data)
         s.sendto(data, addr)
     c.close()

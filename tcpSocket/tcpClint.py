@@ -6,13 +6,13 @@ def Main():
 
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.connect((host, port))
-
-    message = raw_input("-> ")
+    message=''
     while message != 'q':
+        message = raw_input("enter the data you want to send -> ")
         s.send(message)
         data = s.recv(1024)
         print 'Received from server: ' + str(data)
-        message = raw_input("-> ")
+
     s.close()
 
 if __name__ == '__main__':

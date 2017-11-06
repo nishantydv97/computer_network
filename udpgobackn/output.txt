@@ -1,0 +1,26 @@
+nishant@nishant-Inspiron-3542:~/udpgobackn$ python udpServer.py 
+server is waiting for connections 
+connection established from the client :('127.0.0.1', 5001)
+data recieved are :n
+data recieved are :i
+data recieved are :s
+data recieved are :h
+packet no :4 is missing resend after packet no 4
+data recieved are :a
+data recieved are :n
+data recieved are :t
+nishant@nishant-Inspiron-3542:~/udpgobackn$ 
+
+nishant@nishant-Inspiron-3542:~/udpgobackn$ python udpClient.py 
+enter the data you want to sent to the  server : ->nishant
+connection established from the server ('127.0.0.1', 5000)
+acknowlegment receved for packet no 0
+acknowlegment receved for packet no 1
+acknowlegment receved for packet no 2
+acknowlegment receved for packet no 3
+resending packet after packet no :3
+acknowlegment receved for packet no 4
+acknowlegment receved for packet no 5
+acknowlegment receved for packet no 6
+nishant@nishant-Inspiron-3542:~/udpgobackn$ 
+

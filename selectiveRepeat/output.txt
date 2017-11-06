@@ -1,0 +1,24 @@
+nishant@nishant-Inspiron-3542:~/ydv/tcpSocket$ python tcpServer.py
+serveer started :
+Connection from: ('127.0.0.1', 13742)
+recieved data is n
+recieved data is i
+recieved data is s
+recieved data is h
+recieved data is a
+recieved data is t
+frame received is n at position : 6
+nishant@nishant-Inspiron-3542:~/ydv/tcpSocket$ 
+
+nishant@nishant-Inspiron-3542:~/ydv/tcpSocket$ python tcpClint.py 
+enter the data you want to send -> nishant
+acknowlegment receaved for frame no :1
+acknowlegment receaved for frame no :2
+acknowlegment receaved for frame no :3
+acknowlegment receaved for frame no :4
+acknowlegment receaved for frame no :5
+frame no 6 is missing
+acknowlegment receaved for frame no :7
+sending again frame no : 6
+nishant@nishant-Inspiron-3542:~/ydv/tcpSocket$ 
+

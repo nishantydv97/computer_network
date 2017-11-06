@@ -64,10 +64,10 @@ int main(){
 	}else{
 		cout<<"bad bit is :"<<sum<<": from left side "<<endl;
 	}
-	if(rcv[sum]==1){
+	if(rcv[sum-1]==1){
 		rcv[sum]=0;
 	}else{
-		rcv[sum]=1;
+		rcv[sum-1]=1;
 	}
 	cout<<"correct bit or error free bit are as follows \n";
 	for(int i=0;i<12;i++){
@@ -76,15 +76,15 @@ int main(){
 	return 0;
 }
 /*
- *  enter the 8 bit data :
+ enter the 8 bit data : 
 1 1 0 0 0 1 0 0
 
- bit transfer through the channel are :
-0 0 1 1 1 0 0 1 0 1 0 0
- enter the bit received by the receiver :
+ bit transfer through the channel are : 
+0 0 1 1 1 0 0 1 0 1 0 0 
+ enter the bit received by the receiver : 
 0 0 1 1 0 0 0 1 0 1 0 0
-bad bit is :5: from left side
-correct bit or error free bit are as follows
-0 0 1 1 0 1 0 1 0 1 0 0
+bad bit is :5: from left side 
+correct bit or error free bit are as follows 
+0 0 1 1 1 0 0 1 0 1 0 0 
  */
 
